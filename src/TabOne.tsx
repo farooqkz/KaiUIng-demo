@@ -1,5 +1,5 @@
 import { Component } from "inferno";
-import { TextListItem, IconListItem, ListView } from "KaiUI";
+import { Avatar, TextListItem, IconListItem, ListView, Separator } from "KaiUI";
 
 interface ITabOneState {
   cursor: number;
@@ -21,6 +21,7 @@ export default class TabOne extends Component {
         <TextListItem
           tertiary="Their 'icons' are Avatar components which show presence/online status of people next to their avatar picture"
           />
+        <Separator text="People" />
         <IconListItem
           icon={<Avatar src="https://avatars.githubusercontent.com/u/15038218?v=4" online="offline" />}
           secondary="Farooq Karimi Zadeh"
@@ -36,6 +37,7 @@ export default class TabOne extends Component {
           secondary="BananaHackers"
           primary="Both Simon and Farooq are members of the BananaHackers community and also members of their council"
           />
+        <TextInput placeholder="Enter whatever you wish" />
       </ListView>
     );
   }
