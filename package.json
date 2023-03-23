@@ -1,0 +1,20 @@
+{
+  "name": "KaiUIng-demo",
+  "version": "1.0.0",
+  "description": "A demo KaiOS application with KaiUIng as its UI library",
+  "main": "src/index.html",
+  "repository": "https://github.com/farooqkz/KaiUIng-demo",
+  "author": "Farooq Karimi Zadeh <fkz@riseup.net>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "babel-plugin-inferno": "^6.6.0",
+    "classnames": "^2.3.2",
+    "inferno": "^8.0.6",
+    "inferno-extras": "^8.0.6",
+    "parcel": "^2.8.3",
+    "KaiUIng": "/home/farooqkz/playground/Kai/KaiUIng/KaiUIngInferno/",
+    "typescript": "^4.9.3",
+    "ts-plugin-inferno": "^1.0.0"
+  }
+}
