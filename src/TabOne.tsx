@@ -6,6 +6,8 @@ interface ITabOneState {
 }
 
 export default class TabOne extends Component {
+  private state: ITabOneState;
+
   constructor(props: any) {
     super(props);
     this.state = {
