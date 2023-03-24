@@ -6,7 +6,7 @@ interface ITabOneState {
 }
 
 export default class TabOne extends Component {
-  constructor(props: null) {
+  constructor(props: any) {
     super(props);
     this.state = {
       cursor: 0,
@@ -14,7 +14,7 @@ export default class TabOne extends Component {
   }
   render() {
     return (
-      <ListView onChangeCb={(cursor) => this.setState({ cursor: cursor })}>
+      <ListView cursor={this.state.cursor} onChangeCb={(cursor: number) => this.setState({ cursor: cursor })}>
         <TextListItem tertiary="For these IconListItems, secondary texts are names and primary texts are some descriptions" />
         <TextListItem tertiary="Their 'icons' are Avatar components which show presence/online status of people next to their avatar picture" />
         <Separator text="People" />

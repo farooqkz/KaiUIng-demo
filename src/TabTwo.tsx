@@ -2,7 +2,7 @@ import { ListView, TextListItem, IconListItem, Button } from "KaiUI";
 
 export default function TabTwo() {
   return (
-    <ListView>
+    <ListView cursor={0}>
       <TextListItem primary="Item one" />
       <TextListItem primary="Item two" secondary="Secondary text of item two" />
       <TextListItem tertiary="An item just with a tertiary text" />
