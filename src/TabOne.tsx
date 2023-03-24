@@ -50,7 +50,7 @@ export default class TabOne extends Component {
           secondary="BananaHackers"
           primary="Both Simon and Farooq are members of the BananaHackers community and also members of their council"
         />
-        <TextInput placeholder="Enter whatever you wish" />
+        <TextInput label="You WISH" placeholder="Enter whatever you wish" />
       </ListView>
     );
   }
