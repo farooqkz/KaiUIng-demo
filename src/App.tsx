@@ -29,30 +29,37 @@ export default class App extends Component {
       <>
         <TabView
           tabLabels={this.tabs}
-          onChangeIndex={(newTab: number) => this.setState({ currentTab: newTab })}
+          onChangeIndex={(newTab: number) =>
+            this.setState({ currentTab: newTab })
+          }
           defaultActiveTab={currentTab}
-          >
+        >
           <TabOne />
           <TabTwo />
         </TabView>
         <footer>
-          <SoftKey
-            left="Menu"
-            leftCb={() => this.setState({ menu: true })}
-          />
+          <SoftKey left="Menu" leftCb={() => this.setState({ menu: true })} />
         </footer>
+        {menu
+          ? createPortal(
+              <DropDownMenu
+                labels={["foo", "bar"]}
+                selectCb={(selected: string) => {
+                  this.setState({ menu: false });
+                  toast(
+                    `You selected ${selected}`,
+                    1500,
+                    document.getElementById("toast")
+                  );
+                }}
+              >
+                <TextListItem primary="Foo" />
+                <TextListItem primary="Bar" />
+              </DropDownMenu>,
+              document.querySelector("#menu")
+            )
+          : null}
       </>
-      { menu ? createPortal(
-          <DropDownMenu
-            labels={["foo", "bar"]}
-            selectCb={(selected: string) => {
-              this.setState({ menu: false });
-              toast(`You selected ${selected}`, 1500, document.getElementById("toast"));
-            }}
-            >
-              <TextListItem primary="Foo" />
-              <TextListItem primary="Bar" />
-            </DropDownMenu>, document.querySelector("#menu")) : null }
     );
   }
-};
+}
