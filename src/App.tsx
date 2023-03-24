@@ -38,12 +38,13 @@ export default class App extends Component {
           <TabTwo />
         </TabView>
         <footer>
-          <SoftKey left="Menu" leftCb={() => this.setState({ menu: true })} />
+          <SoftKey leftText="Menu" leftCb={() => this.setState({ menu: true })} />
         </footer>
         {menu
           ? createPortal(
               <DropDownMenu
                 labels={["foo", "bar"]}
+                title="A menu"
                 selectCb={(selected: string) => {
                   this.setState({ menu: false });
                   toast(
