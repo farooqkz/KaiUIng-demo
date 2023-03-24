@@ -23,7 +23,7 @@ export default class TabOne extends Component {
         <IconListItem
           icon={
             <Avatar
-              src="https://avatars.githubusercontent.com/u/15038218?v=4"
+              src="https://avatars.githubusercontent.com/u/15038218?s=80&u=ca0adbf8b162b295282caff0741a1402d7874ecc&v=4"
               online="offline"
             />
           }
