@@ -1,5 +1,5 @@
 import { Component } from "inferno";
-import { Avatar, TextListItem, IconListItem, ListView, Separator } from "KaiUI";
+import { TextInput, Avatar, TextListItem, IconListItem, ListView, Separator } from "KaiUI";
 
 interface ITabOneState {
   cursor: number;
