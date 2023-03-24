@@ -684,6 +684,22 @@
     posthtml-render "^3.0.0"
     semver "^5.7.1"
 
+"@parcel/transformer-typescript-tsc@^2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-typescript-tsc/-/transformer-typescript-tsc-2.8.3.tgz#9a50a6abda0ee08f3d803896a168bdd2f33b071a"
+  integrity sha512-hig99OrUJhXuGLN+Nxisvfkj3cggH6GM1nDcS3KWEGoD+UkxLaXkd32Od/mvJ4nUN/ThbAPqwIljmgkgPlYzbw==
+  dependencies:
+    "@parcel/plugin" "2.8.3"
+    "@parcel/source-map" "^2.1.1"
+    "@parcel/ts-utils" "2.8.3"
+
+"@parcel/ts-utils@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@parcel/ts-utils/-/ts-utils-2.8.3.tgz#f3590ca033c061779dc35ff3d14af2860ed106ac"
+  integrity sha512-4HMt9B9LF2pDFvSKGImho48tlCvCUl7ly1ZMXvQdmEq2i0yoS81tDsmxX3yly/RVUVeUCGAj1JRuuy1lw5zw1A==
+  dependencies:
+    nullthrows "^1.1.1"
+
 "@parcel/types@2.8.3":
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/@parcel/types/-/types-2.8.3.tgz#3306bc5391b6913bd619914894b8cd84a24b30fa"
@@ -749,16 +765,16 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"KaiUI@npm:kaiuing@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/kaiuing/-/kaiuing-2.0.0.tgz#a45639c1f7eca1aab3f856c46128cd1f6ac51446"
-  integrity sha512-2Rh2dqjE1NK7rc04Fkb1RlHM3o1SQAAs9usbZoxxe3aU7Wwb8lVP+sHJgbYO0OfWkIAlQWLt+Nxb49p8NSdeuQ==
-
-"KaiUIng@file:../KaiUIng/KaiUIngInferno":
+"KaiUI@file:../KaiUIng/KaiUIngInferno":
   version "2.0.0"
   dependencies:
     "@swc/helpers" "^0.4.14"
     KaiUI "npm:kaiuing@^2.0.0"
+
+"KaiUI@npm:kaiuing@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/kaiuing/-/kaiuing-2.0.0.tgz#a45639c1f7eca1aab3f856c46128cd1f6ac51446"
+  integrity sha512-2Rh2dqjE1NK7rc04Fkb1RlHM3o1SQAAs9usbZoxxe3aU7Wwb8lVP+sHJgbYO0OfWkIAlQWLt+Nxb49p8NSdeuQ==
 
 abortcontroller-polyfill@^1.1.9:
   version "1.7.5"

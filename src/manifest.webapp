@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "kaiuing demo",
+  "description": "A demo app",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Farooq Karimi Zadeh",
+    "url": "https://github.com/farooqkz/KaiUIng-demo"
+  },
+  "type": "hosted"
+}

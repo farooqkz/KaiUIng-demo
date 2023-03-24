@@ -1,6 +1,7 @@
 {
   "extends": "@parcel/config-default",
   "transformers": {
-    "manifest.webapp": ["@parcel/transformer-raw"]
+    "manifest.webapp": ["@parcel/transformer-raw"],
+    "*.{ts,tsx}": ["@parcel/transformer-typescript-tsc"]
   }
 }
