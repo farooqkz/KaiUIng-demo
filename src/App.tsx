@@ -13,7 +13,7 @@ export default class App extends Component {
   private tabs: Array<string>;
   public state: IAppState;
 
-  constructor(props: null) {
+  constructor(props: any) {
     super(props);
     this.tabs = ["Tab 1", "Tab 2"];
     this.state = {
@@ -47,11 +47,14 @@ export default class App extends Component {
                 title="A menu"
                 selectCb={(selected: string) => {
                   this.setState({ menu: false });
-                  toast(
-                    `You selected ${selected}`,
-                    1500,
-                    document.getElementById("toast")
-                  );
+                  try {
+                    toast(
+                      `You selected ${selected}`,
+                      1500,
+                      document.getElementById("toast")
+                    );
+                  } catch (e) {
+                    console.log(e); }
                 }}
               >
                 <TextListItem primary="Foo" />

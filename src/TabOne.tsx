@@ -1,5 +1,8 @@
 import { Component } from "inferno";
 import { TextInput, Avatar, TextListItem, IconListItem, ListView, Separator } from "KaiUI";
+import farooqkzAvatar from "./farooqkz.png";
+import slauxAvatar from "./slaux.png";
+import bhackersAvatar from "./bhackers.png";
 
 interface ITabOneState {
   cursor: number;
@@ -23,7 +26,7 @@ export default class TabOne extends Component {
         <IconListItem
           icon={
             <Avatar
-              src="https://avatars.githubusercontent.com/u/15038218?s=80&u=ca0adbf8b162b295282caff0741a1402d7874ecc&v=4"
+              src={farooqkzAvatar}
               online="offline"
             />
           }
@@ -33,7 +36,7 @@ export default class TabOne extends Component {
         <IconListItem
           icon={
             <Avatar
-              src="https://avatars.githubusercontent.com/u/18725968?v=4"
+              src={slauxAvatar}
               online="online"
             />
           }
@@ -43,7 +46,7 @@ export default class TabOne extends Component {
         <IconListItem
           icon={
             <Avatar
-              src="https://avatars.githubusercontent.com/u/64679557?s=64&v=4"
+              src={bhackersAvatar}
               online="unavailable"
             />
           }
