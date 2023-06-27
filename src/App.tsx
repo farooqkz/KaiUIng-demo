@@ -12,6 +12,18 @@ interface IAppState {
 export default class App extends Component {
   private tabs: Array<string>;
   public state: IAppState;
+  
+  handleKeyDown = (evt: KeyboardEvent) => {
+    if (this.state.menu && evt.key === "Backspace") {
+      evt.preventDefault();
+      this.setState({ menu: false });
+    }
+    if (evt.key === "Backspace") {
+      window.close();
+      // if you don't explicitly close the app, KaiOS will keep
+      // it in background and it will be up to OOM to kill it or not
+    }
+  };
 
   constructor(props: any) {
     super(props);
@@ -20,6 +32,14 @@ export default class App extends Component {
       currentTab: 0,
       menu: false,
     };
+  }
+
+  componentDidMount() {
+    document.addEventListener("keydown", this.handleKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.handleKeyDown);
   }
 
   render() {

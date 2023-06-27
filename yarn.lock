@@ -932,8 +932,10 @@
   resolved "https://registry.yarnpkg.com/@zeit/schemas/-/schemas-2.29.0.tgz#a59ae6ebfdf4ddc66a876872dd736baa58b6696c"
   integrity sha512-g5QiLIfbg3pLuYUJPlisNKY+epQJTcMDsOnVNkscrDP1oi7vmJnzOANYJI/1pZcVJ6umUkBv3aFtlg1UvUHGzA==
 
-"KaiUI@file:../KaiUIng/KaiUIngInferno":
-  version "2.0.0"
+"KaiUI@npm:kaiuing-inferno@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/kaiuing-inferno/-/kaiuing-inferno-3.0.0.tgz#73d38c2c4c5929e3cf877d25be0f9c685f1a02d0"
+  integrity sha512-za+1PZSLaGWV/hE31jlwwhmuLHDOhc3bB71eoB29m4BWVH+PvmTp/sxMnOzcFRyww7IeI14/iUrZGhMYAEd2lg==
   dependencies:
     "@swc/helpers" "^0.4.14"
     KaiUI "npm:kaiuing@^2.0.0"

@@ -1,5 +1,5 @@
 import { ListView, TextListItem, IconListItem, Button } from "KaiUI";
-import farooqkzAvatar from "./farooqkz.png";
+import farooqkzAvatar from "url:./farooqkz.png";
 
 export default function TabTwo() {
   return (

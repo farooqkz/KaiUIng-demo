@@ -1,15 +1,15 @@
 import { Component } from "inferno";
 import { TextInput, Avatar, TextListItem, IconListItem, ListView, Separator } from "KaiUI";
-import farooqkzAvatar from "./farooqkz.png";
-import slauxAvatar from "./slaux.png";
-import bhackersAvatar from "./bhackers.png";
+import farooqkzAvatar from "url:./farooqkz.png";
+import slauxAvatar from "url:./slaux.png";
+import bhackersAvatar from "url:./bhackers.png";
 
 interface ITabOneState {
   cursor: number;
 }
 
 export default class TabOne extends Component {
-  private state: ITabOneState;
+  public state: ITabOneState;
 
   constructor(props: any) {
     super(props);
