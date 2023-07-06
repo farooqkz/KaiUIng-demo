@@ -3,6 +3,8 @@ import { TabView, TextListItem, SoftKey, DropDownMenu, toast } from "KaiUI";
 
 import TabOne from "./TabOne";
 import TabTwo from "./TabTwo";
+import TabThree from "./TabThree";
+import TabFour from "./TabFour";
 
 interface IAppState {
   currentTab: number;
@@ -10,7 +12,7 @@ interface IAppState {
 }
 
 export default class App extends Component {
-  private tabs: Array<string>;
+  private readonly tabs: string[] = ["Tab One", "Tab Two", "Tab Three", "Tab Four"];
   public state: IAppState;
   
   handleKeyDown = (evt: KeyboardEvent) => {
@@ -27,7 +29,6 @@ export default class App extends Component {
 
   constructor(props: any) {
     super(props);
-    this.tabs = ["Tab 1", "Tab 2"];
     this.state = {
       currentTab: 0,
       menu: false,
@@ -56,6 +57,8 @@ export default class App extends Component {
         >
           <TabOne />
           <TabTwo />
+          <TabThree />
+          <TabFour />
         </TabView>
         <footer>
           <SoftKey leftText="Menu" leftCb={() => this.setState({ menu: true })} />
@@ -68,10 +71,12 @@ export default class App extends Component {
                 selectCb={(selected: string) => {
                   this.setState({ menu: false });
                   try {
+                    let toastElement: HTMLElement | null = document.getElementById("toast");
+                    if (!toastElement) return;
                     toast(
                       `You selected ${selected}`,
                       1500,
-                      document.getElementById("toast")
+                      toastElement
                     );
                   } catch (e) {
                     console.log(e); }

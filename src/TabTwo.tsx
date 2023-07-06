@@ -12,7 +12,7 @@ export default function TabTwo() {
         secondary="secondary text of ILI"
         iconSrc={farooqkzAvatar}
       />
-      <Button text="Hi I am a button!" />
+      <Button text="Press me!" onClick={() => window.alert("Patata!")} />
     </ListView>
   );
 }
